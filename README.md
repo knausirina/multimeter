@@ -1,3 +1,5 @@
+3D model of a multimeter.
+
 Multimeter with 5 modes:
 1. Neutral (always 0)
 2. Resistance
@@ -10,3 +12,4 @@ R = 1000 Ом
 P = 400 Вт
 
 When you hover over the control, it should be highlighted. In this state, the control is considered active. The position of the control can only be changed in the active state by scrolling the mouse wheel.
+
