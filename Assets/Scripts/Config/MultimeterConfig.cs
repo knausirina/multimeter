@@ -5,13 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MultimeterConfig", menuName = "Configs/MultimeterConfig")]
 public class MultimeterConfig : ScriptableObject
 {
-    [SerializeField] private double _r;
-    [SerializeField] private double _p;
-    [SerializeField] private double _tempV;
-    [SerializeField] private MultimeterMode _mode;
+    [SerializeField] private float _r;
+    [SerializeField] private float _p;
+    [SerializeField] private float _acVoltage;
+    [SerializeField] private MultimeterMode _defaultMode;
 
-    public double R => _r;
-    public double P => _p;
-    public double TempV => _tempV;
-    public MultimeterMode MultimeterMode => _mode;
+    public float R => _r;
+    public float P => _p;
+    public float ACVoltage => _acVoltage;
+    public MultimeterMode DefaultMultimeterMode => _defaultMode;
 }

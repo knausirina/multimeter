@@ -3,5 +3,5 @@ using UnityEngine;
 
 public enum DataType
 {
-    R, A, DCVoltage, ACVoltage
+    None, R, I, DCVoltage, ACVoltage
 }

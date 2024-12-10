@@ -2,31 +2,20 @@
 using System.Collections;
 using UnityEngine;
 
-public class ModelData
+public struct ModelData
 {
-    private double _r;
-    private double _i;
-    private double _v;
-    private double _vTemp;
-    private double _p;
+    public float R { get; set; }
+    public float I { get; set; }
+    public float P { get; set; }
+    public float ACVoltage { get; set; }
+    public float DCVoltage { get; set; }
 
-    public double R => _r;
-    public double i => _i;
-    public double v => _v;
-    public double vTemp => _vTemp;
-    public double r => _r;
-
-    public ModelData(double p, double r, double vTemp)
+    public ModelData(float p, float r, float acVoltage)
     {
-        _p = p;
-        _r = r;
-        _vTemp = vTemp;
-
-        CalcA();
-    }
-
-    private void CalcA()
-    {
-        _i = Math.Sqrt(_p / _r);
+        P = p;
+        R = r;
+        ACVoltage = acVoltage;
+        I = 0;
+        DCVoltage = 0;
     }
 }
